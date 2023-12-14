@@ -23,7 +23,6 @@ Exercise for a personal skills test website. It is optimized for desktop and mob
 
 ### Links
 
-- Solution URL: [index.html]
 - Live Site URL: [https://danielmartinez.co.uk/test]
 
 ## My process
