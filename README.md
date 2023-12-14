@@ -17,8 +17,8 @@ Exercise for a personal skills test website. It is optimized for desktop and mob
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/chanel/blob/main/screenshots/desktop.jpg]
-- Mobile version: [https://github.com/danielopq/chanel/blob/main/screenshots/mobile.jpg]
+- Desktop version: [https://github.com/danielopq/test/blob/main/screenshots/desktop.jpg]
+- Mobile version: [https://github.com/danielopq/test/blob/main/screenshots/mobile.jpg]
 
 
 ### Links
