@@ -9,6 +9,11 @@ body {
   height: 100vh;
   margin: 0px 0px 0px 0px;
 }
+h1{
+  font-size: 20px;
+  line-height: 100px;
+}
+
 p {
   font-size: 18px;
 }
@@ -16,7 +21,7 @@ img {
   display: block;
   margin: auto;
 }
-article {
+main {
   width: 730px;
   height: 510px;
   border-radius: 30px;
@@ -24,7 +29,7 @@ article {
   background-color: white;
   box-shadow: 30px 30px 60px -45px hsl(234, 85%, 45%);
 }
-article > div {
+article {
   width: 365px;
   height: inherit;
 }
@@ -43,8 +48,6 @@ article > div {
   width: 310px;
   height: 100px;
   color: hsl(241, 100%, 89%);
-  font-size: 20px;
-  line-height: 100px;
 }
 #result-circle {
   width: 200px;
@@ -166,7 +169,7 @@ article > div {
   color: #9596a8;
 }
 @media screen and (max-width: 480px) {
-  article {
+  main {
     flex-wrap: wrap;
     box-shadow: none;
   }
