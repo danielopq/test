@@ -22,10 +22,6 @@ h1 {
   padding: 0px;
 }
 
-p {
-  font-size: 18px;
-}
-
 img {
   display: block;
   margin: auto;
@@ -43,10 +39,10 @@ main {
 
 article {
   width: 368px;
-  height: inherit;
 }
 
 #result {
+  height: 512px;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -119,6 +115,7 @@ article {
 }
 
 #summary {
+  height: 512px;
   background-color: white;
   border-radius: 0px 30px 30px 0px;
   display: flex;
@@ -227,52 +224,110 @@ article {
 /* ############################ MOBILE VERSION ############################  */
 
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 490px) {
+
+  body{
+    align-items:flex-start;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+  
   main {
-    flex-wrap: wrap;
+    width: 100vw;
+    height: 809px;
+    border-radius: 0px;
+    flex-direction: column;
     box-shadow: none;
   }
-
-  body {
-    align-items: flex-start;
+  
+  article {
+    width: inherit;
   }
-
+  
   #result {
-    height: 355px;
-    border-radius: 0px 0px 30px 30px;
+    height: 356px;
+    border-radius: 0px 0px 32px 32px;
   }
-
+  
   #result-title {
-    height: 80px;
-    line-height: 80px;
+    width: 94px;
+    height: 23px;
+    margin-top: 24px;
   }
-
+  
   #result-circle {
     width: 140px;
     height: 140px;
+    margin-top: 24px;
     border-radius: 70px;
   }
-
+  
   #result-circle>div {
-    width: 140px;
+    width: 81px;
   }
-
+  
   #score {
-    height: 80px;
-    font-size: 55px;
-    line-height: 120px;
+    height: 72px;
+    margin-top: 25px;
+    font-size: 56px;
   }
-
+  
+  #max-score {
+    height: 21px;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
   #result-mark {
-    height: 60px;
-    line-height: 70px;
+    width: 63px;
+    height: 31px;
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 31px;
   }
-
-  #summary {
-    border-radius: 0px;
-  }
-
+  
   #result-comment {
-    width: 220px;
+    width: 260px;
+    height: 42px;
+    margin-top: 8px;
+    font-size: 16px;
   }
+  
+  #summary {
+    height: 453px;
+  }
+  
+  #summary>div {
+    width: 315px;
+  }
+  
+  #summary-title {
+    height: 31px;
+    margin: 24px 0px 24px 0px;
+    line-height: 31px;
+  }
+  
+  #bt-continue {
+    width: 315px;
+  }
+    
+  .icon {
+    margin-right: 12px;
+  }
+  
+  .skill-title {
+    height: 21px;
+    line-height: 21px;
+    font-size: 16px;
+  }
+  
+  .skillMark{
+    height: 21px;
+    line-height: 21px;
+    font-size: 16px;
+  }
+   
 }
