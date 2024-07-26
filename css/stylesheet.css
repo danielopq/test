@@ -198,6 +198,13 @@ article {
   align-items: center;
 }
 
+.skillMark{
+  height: 23px;
+  font-size: 18px;
+  line-height: 23px;
+  text-align: right;
+}
+
 .icon {
   margin-right: 12px;
 }
@@ -205,19 +212,14 @@ article {
 .skill-title {
   height: 23px;
   line-height: 23px;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 .skill-score {
-  width: 35px;
-  font-size: 18px;
-  text-align: right;
   color: hsl(224, 30%, 27%);
 }
 
 .skill-maxscore {
-  font-size: 18px;
-  text-align: right;
   color: #9596a8;
 }
 
