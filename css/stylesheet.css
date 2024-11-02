@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&display=swap');
 
 /* CSS Document */
-*{
+* {
   box-sizing: border-box;
 }
+
 body {
   display: flex;
   justify-content: center;
@@ -70,7 +71,7 @@ article {
   flex-direction: column;
   margin-top: 35px;
   border-radius: 100px;
-  background: linear-gradient(180deg, #4D21C9 0%, hsla(241.4,71.8%,45.9%,0) 100%, hsla(241.4,71.8%,45.9%,0) 100%);
+  background: linear-gradient(180deg, #4D21C9 0%, hsla(241.4, 71.8%, 45.9%, 0) 100%, hsla(241.4, 71.8%, 45.9%, 0) 100%);
 }
 
 #result-circle>div {
@@ -138,22 +139,22 @@ article {
 }
 
 #reaction {
-  background: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 255, 255, 0.95)),hsl(0, 100%, 67%);
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(0, 100%, 67%);
   color: hsl(0, 100%, 67%);
 }
 
 #memory {
-  background: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 255, 255, 0.95)),hsl(39, 100%, 56%);
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(39, 100%, 56%);
   color: hsl(39, 100%, 56%);
 }
 
 #verbal {
-  background: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 255, 255, 0.95)),hsl(166, 100%, 37%);
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(166, 100%, 37%);
   color: hsl(166, 100%, 37%);
 }
 
 #visual {
-  background: linear-gradient(rgba(255, 255, 255, 0.95),rgba(255, 255, 255, 0.95)),hsl(234, 85%, 45%);
+  background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), hsl(234, 85%, 45%);
   color: hsl(234, 85%, 45%);
 }
 
@@ -171,9 +172,11 @@ article {
   border: none;
 }
 
-#bt-continue:hover {
-  cursor: pointer;
-  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+@media(hover:hover) {
+  #bt-continue:hover {
+    cursor: pointer;
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  }
 }
 
 /*Defines each of the div skills (Reaction, memory, verbal, visual)*/
@@ -189,13 +192,13 @@ article {
   padding: 0px 16px 0px 16px;
 }
 
-.skillDescription{
+.skillDescription {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 
-.skillMark{
+.skillMark {
   height: 23px;
   font-size: 18px;
   line-height: 23px;
@@ -226,14 +229,14 @@ article {
 
 @media screen and (max-width: 480px) {
 
-  body{
-    align-items:flex-start;
+  body {
+    align-items: flex-start;
   }
 
   h1 {
     font-size: 18px;
   }
-  
+
   main {
     width: 100vw;
     height: 809px;
@@ -241,46 +244,46 @@ article {
     flex-direction: column;
     box-shadow: none;
   }
-  
+
   article {
     width: inherit;
   }
-  
+
   #result {
     height: 356px;
     border-radius: 0px 0px 32px 32px;
   }
-  
+
   #result-title {
     width: 94px;
     height: 23px;
     margin-top: 24px;
   }
-  
+
   #result-circle {
     width: 140px;
     height: 140px;
     margin-top: 24px;
     border-radius: 70px;
   }
-  
+
   #result-circle>div {
     width: 81px;
   }
-  
+
   #score {
     height: 72px;
     margin-top: 25px;
     font-size: 56px;
   }
-  
+
   #max-score {
     height: 21px;
     margin-top: 0px;
     font-size: 16px;
     line-height: 21px;
   }
-  
+
   #result-mark {
     width: 63px;
     height: 31px;
@@ -288,46 +291,46 @@ article {
     font-size: 24px;
     line-height: 31px;
   }
-  
+
   #result-comment {
     width: 260px;
     height: 42px;
     margin-top: 8px;
     font-size: 16px;
   }
-  
+
   #summary {
     height: 453px;
   }
-  
+
   #summary>div {
     width: 315px;
   }
-  
+
   #summary-title {
     height: 31px;
     margin: 24px 0px 24px 0px;
     line-height: 31px;
   }
-  
+
   #bt-continue {
     width: 315px;
   }
-    
+
   .icon {
     margin-right: 12px;
   }
-  
+
   .skill-title {
     height: 21px;
     line-height: 21px;
     font-size: 16px;
   }
-  
-  .skillMark{
+
+  .skillMark {
     height: 21px;
     line-height: 21px;
     font-size: 16px;
   }
-   
+
 }

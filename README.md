@@ -12,12 +12,12 @@
 
 ## Overview
 
-This website is optimized for both desktop and mobile users (480px). The elements are arranged according to the provided images. It is built using HTML and CSS.
+Responsive frontend development for a mental skills test simulation. No frameworks or libraries have been used.
 
 ### Screenshot
 
-- Desktop version: [https://github.com/danielopq/test/blob/main/screenshots/desktop.jpg]
-- Mobile version: [https://github.com/danielopq/test/blob/main/screenshots/mobile.jpg]
+- [Desktop version](https://github.com/danielopq/test/blob/main/screenshots/desktop.jpg)
+- [Mobile version](https://github.com/danielopq/test/blob/main/screenshots/mobile.jpg)
 
 
 ### Links
@@ -26,7 +26,7 @@ This website is optimized for both desktop and mobile users (480px). The element
 
 ## My process
 
-I created the website entirely for the desktop version. Once all the elements were in place and met the design requirements, I adapted it for the mobile version using a CSS media query.
+I initially created the website entirely for the desktop version. Once all elements were in place and met the design requirements, I adapted it for mobile using CSS media queries.
 
 ### Built with
 
