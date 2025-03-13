@@ -28,12 +28,13 @@ I initially created the website entirely for the desktop version. Once all eleme
 
 ### Built with
 
-- Adobe dreamweaver
+- Visual Studio 
 - Adobe photoshop
 - Figma
-- Git
+- Git/Github
 - Semantic HTML5 markup
-- CSS custom properties
+- CSS
+- SASS
 
 ## Author
 
