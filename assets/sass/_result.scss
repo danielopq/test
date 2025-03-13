@@ -1,0 +1,129 @@
+@use "colors";
+
+#result {
+    height: 512px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: linear-gradient(180deg, #7755FF 0%, #6943FF 0%, #2F2CE9 100%);
+    border-radius: 32px;
+
+    div {
+        font-family: 'Hanken Grotesk';
+        text-align: center;
+    }
+}
+
+#result-title {
+    width: 125px;
+    height: 31px;
+    margin-top: 38px;
+    color: colors.$lightLavender;
+}
+
+#result-circle {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 35px;
+    border-radius: 100px;
+    background: linear-gradient(180deg, #4D21C9 0%, hsla(241.4, 71.8%, 45.9%, 0) 100%, hsla(241.4, 71.8%, 45.9%, 0) 100%);
+
+    div {
+        width: 81px;
+    }
+}
+
+#score {
+    width: inherit;
+    height: 72px;
+    margin-top: 55px;
+    color: white;
+    font-size: 72px;
+    line-height: 72px;
+}
+
+#max-score {
+    width: inherit;
+    height: 23px;
+    margin-top: 4px;
+    color: #CAC9FF;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+#result-mark {
+    width: 260px;
+    height: 42px;
+    margin-top: 28px;
+    color: white;
+    font-size: 32px;
+    line-height: 42px;
+}
+
+#result-comment {
+    width: 260px;
+    height: 69px;
+    margin-top: 14px;
+    color: colors.$lightLavender;
+    display: flex;
+    align-items: flex-start;
+    font-size: 18px;
+}
+
+/* ############################ MOBILE VERSION ############################  */
+
+@media screen and (max-width: 480px) {
+
+    #result {
+        height: 356px;
+        border-radius: 0px 0px 32px 32px;
+    }
+
+    #result-title {
+        width: 94px;
+        height: 23px;
+        margin-top: 24px;
+    }
+
+    #result-circle {
+        width: 140px;
+        height: 140px;
+        margin-top: 24px;
+        border-radius: 70px;
+
+        div {
+            width: 81px;
+        }
+    }
+
+    #score {
+        height: 72px;
+        margin-top: 25px;
+        font-size: 56px;
+    }
+
+    #max-score {
+        height: 21px;
+        margin-top: 0px;
+        font-size: 16px;
+        line-height: 21px;
+    }
+
+    #result-mark {
+        width: 63px;
+        height: 31px;
+        margin-top: 24px;
+        font-size: 24px;
+        line-height: 31px;
+    }
+
+    #result-comment {
+        width: 260px;
+        height: 42px;
+        margin-top: 8px;
+        font-size: 16px;
+    }
+}

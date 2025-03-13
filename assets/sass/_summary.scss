@@ -1,0 +1,146 @@
+@use "normalize";
+@use "colors";
+
+#summary {
+    height: 512px;
+    background-color: white;
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+#summary-title {
+    height: 31px;
+    margin: 38px 0px 28px 0px;
+    font-size: 24px;
+    line-height: 31px;
+    color: colors.$darkGrayBlue;
+}
+
+#reaction {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), colors.$LightRed;
+    color: colors.$LightRed;
+}
+
+#memory {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), colors.$OrangeyYellow;
+    color: colors.$OrangeyYellow;
+}
+
+#verbal {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), colors.$GreenTeal;
+    color: colors.$GreenTeal;
+}
+
+#visual {
+    background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)), colors.$CobaltBlue;
+    color: colors.$CobaltBlue;
+}
+
+#bt-continue {
+    width: 288px;
+    height: 56px;
+    margin-top: 25px;
+    font-family: 'Hanken Grotesk';
+    font-size: 18px;
+    text-align: center;
+    line-height: 55px;
+    color: white;
+    background-color: colors.$darkGrayBlue;
+    border-radius: 128px;
+    border: none;
+}
+
+@media(hover:hover) {
+    #bt-continue:hover {
+        cursor: pointer;
+        background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    }
+}
+
+.skill {
+    width: 288px;
+    height: 56px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Hanken Grotesk';
+    line-height: 56px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    padding: 0px 16px 0px 16px;
+}
+
+.skillDescription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.skillMark {
+    height: 23px;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: right;
+}
+
+.icon {
+    margin-right: 12px;
+}
+
+.skill-title {
+    height: 23px;
+    line-height: 23px;
+    font-size: 18px;
+}
+
+.skill-score {
+    color: colors.$darkGrayBlue;
+}
+
+.skill-maxscore {
+    color: #9596a8;
+}
+
+/* ############################ SUMMARY MOBILE VERSION ############################  */
+
+@media screen and (max-width: 480px) {
+
+    #summary {
+        height: 453px;
+    }
+
+    #summary>div {
+        width: 315px;
+    }
+
+    #summary-title {
+        height: 31px;
+        margin: 24px 0px 24px 0px;
+        line-height: 31px;
+    }
+
+    #bt-continue {
+        width: 315px;
+    }
+
+    .icon {
+        margin-right: 12px;
+    }
+
+    .skill-title {
+        height: 21px;
+        line-height: 21px;
+        font-size: 16px;
+    }
+
+    .skillMark {
+        height: 21px;
+        line-height: 21px;
+        font-size: 16px;
+    }
+
+}

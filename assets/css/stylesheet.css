@@ -1,7 +1,4 @@
-@charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&display=swap');
-
-/* CSS Document */
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,700;0,800;1,500&display=swap");
 * {
   box-sizing: border-box;
 }
@@ -28,20 +25,17 @@ img {
   margin: auto;
 }
 
-main {
-  width: 736px;
-  height: 512px;
-  border-radius: 32px;
-  display: flex;
-  flex-direction: row;
-  background-color: white;
-  box-shadow: 0px 30px 60px rgba(61, 140, 236, 0.15);
+/* ############################ NORMALIZE MOBILE VERSION ############################  */
+@media screen and (max-width: 480px) {
+  body {
+    align-items: flex-start;
+  }
+  h1 {
+    font-size: 18px;
+  }
 }
-
-article {
-  width: 368px;
-}
-
+/*PRIMARY*/
+/*NEUTRAL*/
 #result {
   height: 512px;
   display: flex;
@@ -50,9 +44,8 @@ article {
   background-image: linear-gradient(180deg, #7755FF 0%, #6943FF 0%, #2F2CE9 100%);
   border-radius: 32px;
 }
-
-#result>div {
-  font-family: 'Hanken Grotesk';
+#result div {
+  font-family: "Hanken Grotesk";
   text-align: center;
 }
 
@@ -73,8 +66,7 @@ article {
   border-radius: 100px;
   background: linear-gradient(180deg, #4D21C9 0%, hsla(241.4, 71.8%, 45.9%, 0) 100%, hsla(241.4, 71.8%, 45.9%, 0) 100%);
 }
-
-#result-circle>div {
+#result-circle div {
   width: 81px;
 }
 
@@ -115,19 +107,59 @@ article {
   font-size: 18px;
 }
 
+/* ############################ MOBILE VERSION ############################  */
+@media screen and (max-width: 480px) {
+  #result {
+    height: 356px;
+    border-radius: 0px 0px 32px 32px;
+  }
+  #result-title {
+    width: 94px;
+    height: 23px;
+    margin-top: 24px;
+  }
+  #result-circle {
+    width: 140px;
+    height: 140px;
+    margin-top: 24px;
+    border-radius: 70px;
+  }
+  #result-circle div {
+    width: 81px;
+  }
+  #score {
+    height: 72px;
+    margin-top: 25px;
+    font-size: 56px;
+  }
+  #max-score {
+    height: 21px;
+    margin-top: 0px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  #result-mark {
+    width: 63px;
+    height: 31px;
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 31px;
+  }
+  #result-comment {
+    width: 260px;
+    height: 42px;
+    margin-top: 8px;
+    font-size: 16px;
+  }
+}
 #summary {
   height: 512px;
   background-color: white;
-  border-radius: 0px 30px 30px 0px;
+  border-radius: 0 30px 30px 0;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
-}
-
-#summary>div {
-  width: 288px;
-  font-family: 'Hanken Grotesk';
 }
 
 #summary-title {
@@ -162,7 +194,7 @@ article {
   width: 288px;
   height: 56px;
   margin-top: 25px;
-  font-family: 'Hanken Grotesk';
+  font-family: "Hanken Grotesk";
   font-size: 18px;
   text-align: center;
   line-height: 55px;
@@ -172,20 +204,20 @@ article {
   border: none;
 }
 
-@media(hover:hover) {
+@media (hover: hover) {
   #bt-continue:hover {
     cursor: pointer;
     background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
   }
 }
-
-/*Defines each of the div skills (Reaction, memory, verbal, visual)*/
 .skill {
+  width: 288px;
   height: 56px;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  font-family: "Hanken Grotesk";
   line-height: 56px;
   margin-bottom: 16px;
   border-radius: 12px;
@@ -223,20 +255,52 @@ article {
   color: #9596a8;
 }
 
+/* ############################ SUMMARY MOBILE VERSION ############################  */
+@media screen and (max-width: 480px) {
+  #summary {
+    height: 453px;
+  }
+  #summary > div {
+    width: 315px;
+  }
+  #summary-title {
+    height: 31px;
+    margin: 24px 0px 24px 0px;
+    line-height: 31px;
+  }
+  #bt-continue {
+    width: 315px;
+  }
+  .icon {
+    margin-right: 12px;
+  }
+  .skill-title {
+    height: 21px;
+    line-height: 21px;
+    font-size: 16px;
+  }
+  .skillMark {
+    height: 21px;
+    line-height: 21px;
+    font-size: 16px;
+  }
+}
+main {
+  width: 736px;
+  height: 512px;
+  border-radius: 32px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  box-shadow: 0px 30px 60px rgba(61, 140, 236, 0.15);
+}
+
+article {
+  width: 368px;
+}
 
 /* ############################ MOBILE VERSION ############################  */
-
-
 @media screen and (max-width: 480px) {
-
-  body {
-    align-items: flex-start;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
   main {
     width: 100vw;
     height: 809px;
@@ -244,93 +308,9 @@ article {
     flex-direction: column;
     box-shadow: none;
   }
-
   article {
     width: inherit;
   }
-
-  #result {
-    height: 356px;
-    border-radius: 0px 0px 32px 32px;
-  }
-
-  #result-title {
-    width: 94px;
-    height: 23px;
-    margin-top: 24px;
-  }
-
-  #result-circle {
-    width: 140px;
-    height: 140px;
-    margin-top: 24px;
-    border-radius: 70px;
-  }
-
-  #result-circle>div {
-    width: 81px;
-  }
-
-  #score {
-    height: 72px;
-    margin-top: 25px;
-    font-size: 56px;
-  }
-
-  #max-score {
-    height: 21px;
-    margin-top: 0px;
-    font-size: 16px;
-    line-height: 21px;
-  }
-
-  #result-mark {
-    width: 63px;
-    height: 31px;
-    margin-top: 24px;
-    font-size: 24px;
-    line-height: 31px;
-  }
-
-  #result-comment {
-    width: 260px;
-    height: 42px;
-    margin-top: 8px;
-    font-size: 16px;
-  }
-
-  #summary {
-    height: 453px;
-  }
-
-  #summary>div {
-    width: 315px;
-  }
-
-  #summary-title {
-    height: 31px;
-    margin: 24px 0px 24px 0px;
-    line-height: 31px;
-  }
-
-  #bt-continue {
-    width: 315px;
-  }
-
-  .icon {
-    margin-right: 12px;
-  }
-
-  .skill-title {
-    height: 21px;
-    line-height: 21px;
-    font-size: 16px;
-  }
-
-  .skillMark {
-    height: 21px;
-    line-height: 21px;
-    font-size: 16px;
-  }
-
 }
+
+/*# sourceMappingURL=stylesheet.css.map */
