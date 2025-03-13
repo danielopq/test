@@ -26,7 +26,7 @@ img {
 }
 
 /* ############################ NORMALIZE MOBILE VERSION ############################  */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 735px) {
   body {
     align-items: flex-start;
   }
@@ -108,7 +108,7 @@ img {
 }
 
 /* ############################ MOBILE VERSION ############################  */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 735px) {
   #result {
     height: 356px;
     border-radius: 0px 0px 32px 32px;
@@ -152,6 +152,7 @@ img {
     font-size: 16px;
   }
 }
+/*############################ SUMMARY ############################*/
 #summary {
   height: 512px;
   background-color: white;
@@ -160,6 +161,11 @@ img {
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+}
+@media screen and (max-width: 735px) {
+  #summary #summary {
+    height: 453px;
+  }
 }
 
 #summary-title {
@@ -256,11 +262,11 @@ img {
 }
 
 /* ############################ SUMMARY MOBILE VERSION ############################  */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 735px) {
   #summary {
     height: 453px;
   }
-  #summary > div {
+  .skill {
     width: 315px;
   }
   #summary-title {
@@ -300,7 +306,7 @@ article {
 }
 
 /* ############################ MOBILE VERSION ############################  */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 735px) {
   main {
     width: 100vw;
     height: 809px;

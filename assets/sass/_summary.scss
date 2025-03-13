@@ -1,5 +1,8 @@
 @use "normalize";
 @use "colors";
+@use "breakpoints";
+
+/*############################ SUMMARY ############################*/
 
 #summary {
     height: 512px;
@@ -9,6 +12,12 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+
+    @include breakpoints.mobile {
+        #summary {
+            height: 453px;
+        }
+    }
 }
 
 #summary-title {
@@ -107,13 +116,12 @@
 
 /* ############################ SUMMARY MOBILE VERSION ############################  */
 
-@media screen and (max-width: 480px) {
-
+@include breakpoints.mobile {
     #summary {
         height: 453px;
     }
 
-    #summary>div {
+    .skill {
         width: 315px;
     }
 
@@ -142,5 +150,4 @@
         line-height: 21px;
         font-size: 16px;
     }
-
 }
