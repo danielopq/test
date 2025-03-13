@@ -1,6 +1,9 @@
 @use "normalize";
+@use "breakpoints";
 @use "result";
 @use "summary";
+
+/* ############################ STYLESHEET ############################  */
 
 main {
   width: 736px;
@@ -16,9 +19,9 @@ article {
   width: 368px;
 }
 
-/* ############################ MOBILE VERSION ############################  */
+/* ############################ STYLESHEET MOBILE VERSION ############################  */
 
-@media screen and (max-width: 735px) {
+@include breakpoints.mobile {
   main {
     width: 100vw;
     height: 809px;

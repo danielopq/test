@@ -12,12 +12,6 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-
-    @include breakpoints.mobile {
-        #summary {
-            height: 453px;
-        }
-    }
 }
 
 #summary-title {

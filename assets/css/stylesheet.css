@@ -162,11 +162,6 @@ img {
   justify-content: flex-start;
   flex-direction: column;
 }
-@media screen and (max-width: 735px) {
-  #summary #summary {
-    height: 453px;
-  }
-}
 
 #summary-title {
   height: 31px;
@@ -291,6 +286,7 @@ img {
     font-size: 16px;
   }
 }
+/* ############################ STYLESHEET ############################  */
 main {
   width: 736px;
   height: 512px;
@@ -305,7 +301,7 @@ article {
   width: 368px;
 }
 
-/* ############################ MOBILE VERSION ############################  */
+/* ############################ STYLESHEET MOBILE VERSION ############################  */
 @media screen and (max-width: 735px) {
   main {
     width: 100vw;
