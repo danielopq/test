@@ -1,4 +1,7 @@
 @use "colors";
+@use "breakpoints";
+
+/* ############################ RESULT MOBILE VERSION ############################  */
 
 #result {
     height: 512px;
@@ -73,9 +76,9 @@
     font-size: 18px;
 }
 
-/* ############################ MOBILE VERSION ############################  */
+/* ############################ RESULT MOBILE VERSION ############################  */
 
-@media screen and (max-width: 735px) {
+@include breakpoints.mobile {
 
     #result {
         height: 356px;

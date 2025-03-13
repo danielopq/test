@@ -37,6 +37,7 @@ img {
 }
 /*PRIMARY*/
 /*NEUTRAL*/
+/* ############################ RESULT MOBILE VERSION ############################  */
 #result {
   height: 512px;
   display: flex;
@@ -108,7 +109,7 @@ img {
   font-size: 18px;
 }
 
-/* ############################ MOBILE VERSION ############################  */
+/* ############################ RESULT MOBILE VERSION ############################  */
 @media screen and (max-width: 735px) {
   #result {
     height: 356px;
